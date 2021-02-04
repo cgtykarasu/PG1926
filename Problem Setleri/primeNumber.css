@@ -1,0 +1,20 @@
+input { 
+    border: 3px solid rgb(172, 129, 129); 
+    width: 80px;
+    height: 40px; 
+    padding: 3px 5px;
+    font-size: 30px; 
+    text-align: center;
+    font-weight: bolder; }
+p#result { 
+    font-size: 30px;
+    padding: 10px 10px;
+    font-weight: bolder; }
+.prime { 
+    background: lightgreen; }
+.notPrime { 
+    background: pink; }
+.invalid { 
+    background: rgb(255, 0, 0); }
+
+

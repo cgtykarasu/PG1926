@@ -1,0 +1,74 @@
+<html>
+<head>
+<meta charset="utf-8">
+<h1 style=
+"font-size: xx-large; 
+color: rgb(114, 3, 3);
+background-color: bisque;
+text-align: center;">MÜKEMMEL SAYI</h1>
+<title>Mükemmel Sayı</title>
+</head>
+<body>
+    <form name="toplam">
+
+    <div style="text-align: center;">
+        <label
+            for="mukemmelSayi" 
+            style=
+                "font-size: xx-large;
+                font-weight: bolder; 
+                color: rgb(114, 3, 3);">
+        Sorgulamak istediğiniz sayıyı giriniz 
+        </label>
+</div>
+<br>
+
+    <div
+    style="text-align: center;">
+        <input
+        type="girilenSayi" 
+        id="sayi" 
+        style="font-size: 40px;
+                height: 30px;
+                width: 200px;
+                background-color: rgb(90, 6, 3);
+                color: antiquewhite;
+                text-align-last: center;
+                padding:50px 20px 50px 20px;">
+    </div>
+
+    <div
+        style="text-align: center;">
+        <input 
+        type="submit" 
+        id="hesapla" 
+        value="HESAPLA"
+        style=
+            "padding:10px 10px 10px 10px;
+            color: brown;
+            font-weight: bolder;">
+    </div>
+    </form>
+<br><br>
+
+<script>
+    var btn = document.getElementById("hesapla");
+    btn.onclick=function(){
+        var i,j;
+        var toplam = 0;
+        var sayi = Number(document.getElementById("sayi").value);
+        for(i = 1; i < sayi; i++){
+            if (sayi % i == 0){
+                toplam += i;	
+            }
+        }
+        if (sayi==toplam){
+            alert("Girdiğiniz " + sayi + " sayısı bir Mükemmel Sayıdır"); 
+            }
+            else{
+            alert("Girdiğiniz " + sayi + " sayısı bir Mükemmel Sayı Değildir");
+            }
+        }
+</script>
+</body>
+</html>

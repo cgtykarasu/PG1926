@@ -1,0 +1,27 @@
+input { 
+    border: 3px solid rgb(172, 129, 129); 
+    width: 200px;
+    height: 30px;
+    padding: 3px 5px;
+    font-size: 30px; 
+    text-align: center;
+    font-weight: bolder; }
+p#result { 
+    width: 500px;
+    font-size: 30px;
+    color: brown;
+    text-align: center;
+    margin-left: 90px;
+    padding: 10px 10px;
+    font-weight: bolder;
+    background-color: rgb(240, 236, 200); }
+hr {
+        display: block;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: 5px;}
+
+
